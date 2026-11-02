@@ -53,5 +53,3 @@ class ParentNode(HTMLNode):
             child_body = child.to_html()
             body += child_body
         return start + body + end
-
-        
