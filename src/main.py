@@ -25,7 +25,7 @@ def main() -> None:
     dest_dir_path = "./docs"
 
     print("Copying static files to public directory...")
-    copy_files_recursive(dir_path_static, dir_path_public)
+    copy_files_recursive(dir_path_static, dest_dir_path)
 
     print("Generating pages...")
     generate_pages_recursive(dir_path_content, template_path, dest_dir_path, basepath)
